@@ -1,0 +1,14 @@
+
+<div class="row m-3">
+        <div class="col-9">
+            <agm-map [latitude]="latitude" [longitude]="longitude" (mapClick)="onChoseLocation($event)">
+                <agm-marker
+                  [latitude]="latitude"
+                  [longitude]="longitude"
+                  *ngIf="locationChosen"></agm-marker>
+              </agm-map>
+        </div>
+        <div class="col-3">
+            <h1>Parking Details</h1>
+        </div>
+</div>

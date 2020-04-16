@@ -1,0 +1,8 @@
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="home">Navbar</a>
+    <ul>
+            <a *ngIf="!userIsAuthenticated" routerLink="login" color="Warm"  routerLinkActive = "mat-accent"><button class="btn btn-primary m-1"> Login  </button></a>  
+            <a *ngIf="!userIsAuthenticated" routerLink="signup" color="Warm"  routerLinkActive = "mat-accent"><button class="btn btn-primary m-1"> SignUp  </button></a>  
+            <button class="btn btn-danger m-1" (click)="onLogout()"  *ngIf="userIsAuthenticated"> Log Out </button>
+        </ul>
+  </nav>

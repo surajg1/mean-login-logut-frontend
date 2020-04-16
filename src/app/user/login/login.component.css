@@ -1,0 +1,17 @@
+.my-card{
+    width: 50%;
+    height: 50%;
+    margin: 5px;
+    left: 30%;
+}
+
+.card-header{
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+.new-u{
+    margin-left: 2px;
+    text-align: center;
+    font-weight: 1px;
+}

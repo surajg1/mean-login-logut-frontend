@@ -1,0 +1,20 @@
+
+ <div class="card my-card">
+    <h5 class="card-header">Login</h5>
+    <div class="card-body">
+        <form [formGroup]= "form" (submit)="onSubmit()">
+            <div class="form-group">
+              <label for="exampleInputPassword1">Email Address</label>
+              <input type="email" formControlName="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
+            </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password:</label>
+                <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="button" routerLink="/signup" class="btn btn-outline-primary m-1">New User</button>  
+                </div>
+            </form>        
+    </div>
+  </div>
